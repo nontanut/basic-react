@@ -3,11 +3,25 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+// import HelloComponent from './Components/HelloComponet';
+
+// การสร้าง Functional Component
+// function HelloComponent() {
+//   return <h1>สวัสดี Component</h1>
+// }
+
+// การสร้าง Class Component
+// class HelloComponent extends React.Component{
+//   render() {
+//     return <h1>Hello class extends</h1>
+//   }
+// }
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
